@@ -26,7 +26,7 @@ struct AntrianDriveThru {
         if (isFull()) {
             cout<<"Jalur Drive-Thru Penuh! Mobil "<<platNomor<<" tidak bisa masuk.\n";
         } else {
-            if(front== -1)front = 0;
+            if(isEmpty())front = 0;
             rear++;
             plat[rear]=platNomor;
             cout<<"Mobil "<<platNomor<<" masuk antrian.\n";
